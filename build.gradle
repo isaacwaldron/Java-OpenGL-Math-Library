@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+project.group = 'org.lwjgl'
+project.version = '1.0.0-SNAPSHOT'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+        resources {
+            srcDir 'resources'
+        }
+    }
+}
+
+jar {
+    manifest {
+        def createdBy = System.getProperty('java.version') + ' (' +
+            System.getProperty('java.vendor') + ')'
+        attributes('Created-By': createdBy)
+    }
+}
