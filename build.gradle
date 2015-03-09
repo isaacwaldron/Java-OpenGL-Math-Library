@@ -2,6 +2,7 @@ apply plugin: 'java'
 
 project.group = 'org.lwjgl'
 project.version = '1.0.0-SNAPSHOT'
+archivesBaseName = 'joml'
 
 sourceSets {
     main {

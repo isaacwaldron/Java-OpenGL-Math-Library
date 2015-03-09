@@ -7,3 +7,6 @@
 /.project
 /bin/
 /.gradle/
+
+# temp files
+*~
